@@ -1,0 +1,125 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Solicitud de empleados</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href="css/estilo.css">
+
+    </head>
+<body>
+    <div id="img-header">
+        <img class="img-logo" src="imagenes/IPISA.png" alt="">
+        <img class="img-logo" src="imagenes/NEO.png" alt="">
+        <img class="img-logo" src="imagenes/OILP.png" alt="">
+        <img class="img-logo" src="imagenes/MINISTERIO_EDUCACION.jpg" alt="">
+    </div>
+
+<div class="container contact-form">
+    <h1>Solicitud de empleados</h1>
+    <hr>
+    <form action="conectorBD.php" method="post">
+        <div class="row">
+        
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Nombre Empresa</label>
+                    <input name="nomE" type="text" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label>Telefono</label>
+                    <input name="TelE" type="text" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label>Ocupacion de la Empresa</label>
+                    <input name="OcuE" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Solicita un:</label>
+                    <input name="pasante" type="radio" value="pasante"> Pasante
+                    <input name="empleado" type="radio" value="empleado"> Empleado<br>
+                </div>
+                
+                <div class="form-group">
+                    <label>Puesto</label>
+                    <input name="" type="text" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="currency-field">Sueldo</label>
+                    <input name="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
+                     data-type="currency" value="" placeholder="Ej: 10,000" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Especialidad</label>
+                    <input name="" placeholder="Area donde ira el pasante" type="text" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label>Estado Solicitud</label>
+                    <input name="" disabled type="text" placeholder="Disponible" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Sector al pertenece (Empresa)</label>
+                    <input name="" placeholder="Ej: servicio,privado,publico,Etc..." type="text" class="form-control">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                
+                <div class="form-group">
+                    <label>Direccion</label>
+                    <input name="" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Correo Electronico</label>
+                    <input name="" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Referencia (Contacto)</label>
+                    <input name="" type="text" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label>Perfil de persona que busca</label>
+                    <input name="" type="text" class="form-control" placeholder="Conocimientos que requiere la persona">
+                </div>
+
+                <div class="form-group">
+                    <label>Horario</label>
+                    <select name="" name="Horario" id="Horario">
+                        <option value="completo">Completo</option>
+                        <option value="flexible">Flexible</option>
+                        <option value="medio-tiempo">Medio Tiempo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Observacion</label>
+                    <textarea name="" class="form-control" rows="7"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-block" value="Enviar">
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
+    
+    
+    
+    
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

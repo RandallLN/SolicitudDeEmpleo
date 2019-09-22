@@ -1,0 +1,16 @@
+Solicitud de empleado
+nombre empresa  -
+Adress  -
+telefono  -
+email  -
+Ocupacion de la empresa  -
+Referencia contacto  -
+tipo de solicitud (pasante/empleado)  -
+perfil de la persona buscada (conocimientos)  -
+puesto  -
+horario (completo/flexible/medio tiempo/otro)  -
+sueldo
+especialidad (areas del pasante)  -
+estado solicitud (vigente/ocupado) *  --
+observacion *   -
+sector al que pertenece (servicio/privado/publico)
